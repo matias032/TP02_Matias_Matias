@@ -25,8 +25,13 @@ class Shooter{
       image(imagen,this.posicion.x ,this.posicion.y,anchoImagen,altoImagen);
       //image(imagen,this.posicion.x - anchoImagen/2,this.posicion.y - altoImagen/2,anchoImagen,98.2);
     }
-    public void mover(){
-      this.posicion.x += this.velocidad.x;
+    public void mover(int direccion){
+      if(direccion == 0){
+       this.posicion.x-=this.velocidad.x;
+      }
+      if(direccion == 1){
+       this.posicion.x+=this.velocidad.x;
+      }
     }
     
 }
