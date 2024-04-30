@@ -3,7 +3,7 @@ class Tronco extends GameObject{
    private int alto;
    
    public  Tronco(){
-     imagen = loadImage("tronco.jpg");
+     imagen = loadImage("tronco.png");
      }
    //@Override
    public void display(){

@@ -1,13 +1,8 @@
-//Shooter nave1;
 Shooter nave2;
 Asteroide[] asteroides;
 
-
-
 public void setup(){
   size(600,600);
-  //nave1 = new Shooter();
-  //nave1.posicion = new PVector(100,100);
   PVector posicionInicial = new PVector(width/2, height-98.2);
   PVector velocidad = new PVector(20,0);
   nave2 = new Shooter(posicionInicial, 92,98.2,velocidad);
@@ -19,14 +14,12 @@ public void setup(){
     asteroides[i] = new Asteroide(posAst,100,100,velAst);
   }
   
-  //asteroide = new Asteroide(new PVector(width/2,height),100,100,new PVector(0,5));
+
 }
 public void draw(){
    background(0);
-   //nave1.dibujar();
    nave2.dibujar();
-   //asteroide.dibujar();
-   //asteroide.mover();
+  
    for(int i=0;i<asteroides.length;i++){
       asteroides[i].dibujar();
       asteroides[i].mover();
@@ -49,6 +42,5 @@ public void keyPressed(){
      }
      
      
-   
    }
    

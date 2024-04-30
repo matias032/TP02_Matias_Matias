@@ -20,7 +20,6 @@ class Asteroide{
     
   public void dibujar(){
       image(imagen,this.posicion.x ,this.posicion.y,anchoImagen,altoImagen);
-      //image(imagen,this.posicion.x - anchoImagen/2,this.posicion.y - altoImagen/2,anchoImagen,98.2);
     }
     
  
